@@ -1,0 +1,47 @@
+name: otonglo
+description: "Otonglo - Universal Payment Scanner"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  camera: ^0.11.0+2
+  google_mlkit_text_recognition: ^0.14.0
+  image_picker: ^1.1.2
+  permission_handler: ^11.3.1
+  intl: ^0.20.2
+  uuid: ^4.5.1
+  provider: ^6.1.2
+  device_preview: ^1.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+  # The following section is specific to Flutter's app icon configuration.
+  # It will be used by the flutter_launcher_icons package.
+  assets:
+    - assets/logo.png
+
+  # App icon configuration using flutter_launcher_icons
+  # The logo.png in assets/ will be used as the app icon
+  # To generate icons, run: flutter pub run flutter_launcher_icons:main
+
+# flutter_launcher_icons configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/logo.png"
